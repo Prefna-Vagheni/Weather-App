@@ -3,28 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Semantic HTML Template</title>
-    <link rel="stylesheet" href="utilities.css" />
-    <!-- Link to your utility CSS -->
-    <style>
-      /* Basic styling to visualize structure */
-      body * {
-        border: 1px dashed #ccc;
-        padding: 10px;
-        margin: 5px;
-      }
-    </style>
+    <!--Add favicon  -->
+    <link
+      rel="icon"
+      href="images/4102326_cloud_sun_sunny_weather_icon.png"
+      type="image/png"
+      width="32"
+      height="32"
+    />
+    <!-- end favicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <!-- Link to utility CSS -->
   </head>
   <body>
     <!-- Header -->
     <header>
-      <h1>Website Title</h1>
+      <h1>Weather App</h1>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><i class="fa-duotone fa-solid fa-paper-plane"></i>Home</li>
+          <li>Goma</li>
+          <li>17&#176;</li>
+          <li>Mostly clear</li>
+          <li>H:23&#176; L:15&#176;</li>
         </ul>
       </nav>
     </header>
@@ -32,24 +41,36 @@
     <!-- Main Content -->
     <main>
       <!-- Section -->
-      <section>
-        <h2>Welcome Section</h2>
-        <p>This is the main content area of the page.</p>
+      <section class="forecast">
+        <p>
+          Rainy conditions expected around 00:00. Wind gusts are up to 10km/h
+        </p>
+        <article>
+          <ul>
+            <li>Now</li>
+            <li><i class="fa-duotone fa-solid fa-cloud-bolt"></i></li>
+            <li>17&#176;</li>
+          </ul>
+        </article>
       </section>
 
       <!-- Article -->
-      <article>
-        <header>
-          <h2>Article Title</h2>
-          <p>Posted on <time datetime="2025-05-27">May 27, 2025</time></p>
-        </header>
-        <p>
-          This is the body of the article. It contains the main story or post.
-        </p>
-        <footer>
-          <p>Written by <cite>Author Name</cite></p>
-        </footer>
-      </article>
+      <section class="forecast">
+        <h4 class="forecast--header">
+          <i class="fa-duotone fa-solid fa-calendar-days"></i>10-DAY FORECAST
+        </h4>
+        <article class="forecast--article">
+          <ul class="forecast--ul">
+            <li class="forecast--li">Today</li>
+            <li class="forecast--li"><i class="fa-solid fa-cloud-moon"></i></li>
+          </ul>
+          <ul class="forecast--ul">
+            <li class="forecast--li">17&#176;</li>
+            <li class="forecast--li">Today</li>
+            <li class="forecast--li">Today</li>
+          </ul>
+        </article>
+      </section>
 
       <!-- Aside -->
       <aside>
