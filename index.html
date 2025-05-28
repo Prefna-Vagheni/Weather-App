@@ -199,105 +199,221 @@
         </h4>
         <article class="precipitation--map w-full"></article>
       </section>
-      <section class="probabilities mt-2 rounded w-full p-2 box-shaddow">
-        <article class="probabilities--article averages">
-          <h4 class="probabilities--header">
+      <section class="probabilities mt-2 gap-1 w-full flex">
+        <article
+          class="probabilities--article averages w-half p-2 box-shaddow rounded"
+        >
+          <h4 class="probabilities--header flex gap-1 items-center opacity-5">
             <!-- Replaced pro icon with free equivalent -->
             <i class="fa-solid fa-chart-line"></i>AVERAGES
           </h4>
-          <p class="probabilities--paragraph xl">+2&#176;</p>
+          <p class="probabilities--paragraph text-xl">+2&#176;</p>
           <p class="probabilities--paragraph">above average daily high</p>
-          <ul class="probabilities--ul">
-            <li class="probabilities--li">Today</li>
+          <ul class="probabilities--ul flex justify-between">
+            <li class="probabilities--li opacity-5">Today</li>
             <li class="probabilities--li">H:25&#176;</li>
           </ul>
-          <ul class="probabilities--ul">
-            <li class="probabilities--li">Average</li>
+          <ul class="probabilities--ul flex justify-between">
+            <li class="probabilities--li opacity-5">Average</li>
             <li class="probabilities--li">H:23&#176;</li>
           </ul>
         </article>
-        <article class="probabilities--article feels--like">
-          <h4 class="probabilities--header">
+        <article
+          class="probabilities--article box-shaddow p-2 w-half feels--like"
+        >
+          <h4 class="probabilities--header flex gap-1 items-center opacity-5">
             <!-- Changed to a free temperature icon -->
             <i class="fa-solid fa-temperature-high"></i>FEELS LIKE
           </h4>
-          <p class="probabilities--paragraph xl">+2&#176;</p>
-          <p class="probabilities--paragraph">
-            Similar to the actual temperature.
-          </p>
+          <article class="flex flex-col justify-between">
+            <p class="probabilities--paragraph text-xl">+2&#176;</p>
+            <p class="probabilities--paragraph">
+              Similar to the actual temperature.
+            </p>
+          </article>
         </article>
       </section>
       <section class="wind mt-2 rounded w-full p-2 box-shaddow">
-        <h4 class="precipitation--header">
+        <h4 class="precipitation--header flex gap-1 items-center opacity-5">
           <!-- Replaced incorrect umbrella icon with a wind icon -->
-          <i class="fa-solid fa-wind"></i>10-DAY FORECAST
+          <i class="fa-solid fa-wind"></i>WIND
         </h4>
-        <article class="wind--article">
+        <article class="wind--article grid grid-cols-2">
           <ul class="wind--ul">
-            <li class="wind--li">Wind <span class="wind--span">4km/h</span></li>
-            <li class="wind--li">
+            <li class="wind--li flex justify-between">
+              Wind <span class="wind--span">4km/h</span>
+            </li>
+            <li class="wind--li flex justify-between">
               Gusts <span class="wind--span">4km/h</span>
             </li>
-            <li class="wind--li">
+            <li class="wind--li flex justify-between">
               Direction <span class="wind--span">4km/h</span>
             </li>
           </ul>
-          <article class="wind--compass"></article>
+          <article class="wind--compass flex abs-center">
+            <svg width="50" height="50" viewBox="0 0 100 100">
+              <circle
+                cx="50"
+                cy="50"
+                r="45"
+                stroke="gray"
+                stroke-width="3"
+                fill="none"
+              />
+              <line
+                x1="50"
+                y1="5"
+                x2="50"
+                y2="95"
+                stroke="gray"
+                stroke-width="2"
+              />
+              <line
+                x1="5"
+                y1="50"
+                x2="95"
+                y2="50"
+                stroke="gray"
+                stroke-width="2"
+              />
+              <text x="50" y="12" text-anchor="middle">N</text>
+              <text x="50" y="90" text-anchor="middle">S</text>
+              <text x="90" y="50" text-anchor="middle">E</text>
+              <text x="10" y="50" text-anchor="middle">W</text>
+            </svg>
+          </article>
         </article>
       </section>
 
-      <section class="statistic mt-2 rounded w-full p-2 box-shaddow">
-        <article class="statistic--article uv--index">
-          <h4 class="statistic--header">
+      <section class="statistic mt-2 grid grid-2 gap-4">
+        <article
+          class="statistic--article uv--index w-full p-2 box-shaddow rounded"
+        >
+          <h4 class="statistic--header flex gap-1 items-center opacity-5">
             <!-- Replaced sun-bright with free sun icon -->
             <i class="fa-solid fa-sun"></i>UV INDEX
           </h4>
-          <p class="statistic--paragraph xl">0</p>
-          <p class="statistic--paragraph">Low</p>
-          <p class="statistic--paragraph">Use sun protection 09:00-16:00</p>
+          <article class="flex flex-col justify-between">
+            <p class="statistic--paragraph text-xl">0</p>
+            <p class="statistic--paragraph opacity-1">Low</p>
+            <p class="progress--bar"></p>
+            <p class="statistic--paragraph">Use sun protection 09:00-16:00</p>
+          </article>
         </article>
-        <article class="statistic--article sunrise">
-          <h4 class="statistic--header">
-            <i class="fa-solid fa-sunrise"></i>SUNRISE
+        <article
+          class="statistic--article sunrise w-full p-2 box-shaddow rounded"
+        >
+          <h4 class="statistic--header flex gap-1 items-center opacity-5">
+            <i class="fa-solid fa-cloud-sun"></i>SUNRISE
           </h4>
-          <p class="statistic--paragraph xl">05:59</p>
-          <p class="statistic--paragraph">Sunset: 18:01</p>
+          <article class="flex flex-col justify-between">
+            <p class="statistic--paragraph text-xl">05:59</p>
+            <p class="statistic--paragraph">Sunset: 18:01</p>
+          </article>
         </article>
-        <article class="statistic--article precipitation">
-          <h4 class="statistic--header">
+        <article
+          class="statistic--article precipitation w-full p-2 box-shaddow rounded"
+        >
+          <h4 class="statistic--header flex gap-1 items-center opacity-5">
             <i class="fa-solid fa-droplet"></i>PRECIPITATION
           </h4>
-          <p class="statistic--paragraph xl">4mm</p>
-          <p class="statistic--paragraph">Today</p>
-          <p class="statistic--paragraph">Next expected in 9mm on Fri.</p>
+          <article class="flex flex-col justify-between">
+            <p class="statistic--paragraph text-xl">4mm</p>
+            <p class="statistic--paragraph">Today</p>
+            <p class="statistic--paragraph">Next expected in 9mm on Fri.</p>
+          </article>
         </article>
-        <article class="statistic--article visibility">
-          <h4 class="statistic--header">
+        <article
+          class="statistic--article visibility w-full p-2 box-shaddow rounded"
+        >
+          <h4 class="statistic--header flex gap-1 items-center opacity-5">
             <i class="fa-solid fa-eye"></i>VISIBILITY
           </h4>
-          <p class="statistic--paragraph xl">16 km</p>
-          <p class="statistic--paragraph">Perfectly clear view.</p>
+          <article class="flex flex-col justify-between">
+            <p class="statistic--paragraph text-xl">16 km</p>
+            <p class="statistic--paragraph">Perfectly clear view.</p>
+          </article>
+        </article>
+      </section>
+
+      <section class="wind mt-2 rounded w-full p-2 box-shaddow">
+        <h4 class="precipitation--header flex gap-1 items-center opacity-5">
+          <!-- Replaced incorrect umbrella icon with a wind icon -->
+          <i class="fa-solid fa-wind"></i>WIND
+        </h4>
+        <article class="wind--article grid grid-cols-2">
+          <ul class="wind--ul">
+            <li class="wind--li flex justify-between">
+              Wind <span class="wind--span">4km/h</span>
+            </li>
+            <li class="wind--li flex justify-between">
+              Gusts <span class="wind--span">4km/h</span>
+            </li>
+            <li class="wind--li flex justify-between">
+              Direction <span class="wind--span">4km/h</span>
+            </li>
+          </ul>
+          <article class="wind--compass flex abs-center">
+            <svg width="50" height="50" viewBox="0 0 100 100">
+              <circle
+                cx="50"
+                cy="50"
+                r="45"
+                stroke="gray"
+                stroke-width="3"
+                fill="none"
+              />
+              <line
+                x1="50"
+                y1="5"
+                x2="50"
+                y2="95"
+                stroke="gray"
+                stroke-width="2"
+              />
+              <line
+                x1="5"
+                y1="50"
+                x2="95"
+                y2="50"
+                stroke="gray"
+                stroke-width="2"
+              />
+              <text x="50" y="12" text-anchor="middle">N</text>
+              <text x="50" y="90" text-anchor="middle">S</text>
+              <text x="90" y="50" text-anchor="middle">E</text>
+              <text x="10" y="50" text-anchor="middle">W</text>
+            </svg>
+          </article>
         </article>
       </section>
 
       <section class="waxing mt-2 rounded w-full p-2 box-shaddow">
-        <h4 class="precipitation--header">
-          <!-- Replaced pro moon-over-sun with free moon icon -->
+        <h4 class="precipitation--header flex gap-1 items-center opacity-5">
           <i class="fa-solid fa-moon"></i>WAXING CRESCENT
         </h4>
-        <article class="waxing--article">
-          <ul class="waxing--ul">
-            <li class="waxing--li">
+        <article class="waxing--article grid grid-cols-2">
+          <ul class="waxing--ul flex-col justify-between">
+            <li class="waxing--li flex justify-between">
               Illumination <span class="waxing--span">1%</span>
             </li>
-            <li class="waxing--li">
+            <li class="waxing--li flex justify-between">
               Moonrise <span class="waxing--span">07:07</span>
             </li>
-            <li class="waxing--li">
+            <li class="waxing--li flex justify-between">
               Next Full Moon <span class="waxing--span">14 days</span>
             </li>
           </ul>
-          <article class="waxing--compass"></article>
+          <figure
+            width="50"
+            height="50"
+            class="waxing--compass flex abs-center"
+          >
+            <img
+              src="images/moon.png"
+              alt="Beautiful sunset over the mountains"
+            />
+          </figure>
         </article>
       </section>
 
@@ -307,7 +423,7 @@
             <!-- Replaced pro grate-droplet with free tint icon -->
             <i class="fa-solid fa-tint"></i>HUMIDITY
           </h4>
-          <p class="humidity--paragraph xl">80%</p>
+          <p class="humidity--paragraph text-xl">80%</p>
           <p class="humidity--paragraph">
             The dew point is 14&#176; right now.
           </p>
@@ -317,7 +433,7 @@
             <!-- Replaced tire-pressure-warning with a gauge icon -->
             <i class="fa-solid fa-gauge-simple"></i>PRESSURE
           </h4>
-          <p class="humidity--paragraph xl">05:59</p>
+          <p class="humidity--paragraph text-xl">05:59</p>
           <p class="humidity--paragraph">Sunset: 18:01</p>
         </article>
       </section>
