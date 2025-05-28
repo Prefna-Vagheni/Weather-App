@@ -3,19 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Add favicon  -->
+    <!-- Add favicon -->
     <link
       rel="icon"
-      href="images/4102326_cloud_sun_sunny_weather_icon.png"
+      href="images/cloud.png"
       type="image/png"
       width="32"
       height="32"
     />
-    <!-- end favicon -->
+    <!-- End favicon -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      crossorigin="anonymous"
     />
 
     <title>Weather App</title>
@@ -25,11 +24,12 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header class="container">
       <h1>Weather App</h1>
       <nav>
         <ul>
-          <li><i class="fa-duotone fa-solid fa-paper-plane"></i>Home</li>
+          <!-- Replaced pro duotone icon with free solid version -->
+          <li><i class="fa-solid fa-paper-plane"></i>Home</li>
           <li>Goma</li>
           <li>17&#176;</li>
           <li>Mostly clear</li>
@@ -39,7 +39,7 @@
     </header>
 
     <!-- Main Content -->
-    <main>
+    <main class="container">
       <!-- Section -->
       <section class="forecast">
         <p>
@@ -48,7 +48,8 @@
         <article>
           <ul>
             <li>Now</li>
-            <li><i class="fa-duotone fa-solid fa-cloud-bolt"></i></li>
+            <!-- Changed from fa-regular to fa-solid for free variant -->
+            <li><i class="fa-solid fa-cloud-bolt"></i></li>
             <li>17&#176;</li>
           </ul>
         </article>
@@ -57,7 +58,8 @@
       <!-- Article -->
       <section class="forecast">
         <h4 class="forecast--header">
-          <i class="fa-duotone fa-solid fa-calendar-days"></i>10-DAY FORECAST
+          <!-- Removed duotone, using free solid icon -->
+          <i class="fa-solid fa-calendar-days"></i>10-DAY FORECAST
         </h4>
         <article class="forecast--article">
           <ul class="forecast--ul">
@@ -74,43 +76,53 @@
 
       <section class="precipitation">
         <h4 class="precipitation--header">
-          <i class="fa-solid fa-umbrella-simple"></i></i>10-DAY FORECAST
+          <!-- Fixed duplicate closing tag and ensure free icon is used -->
+          <i class="fa-solid fa-umbrella-simple"></i>10-DAY FORECAST
         </h4>
         <article class="precipitation--map"></article>
       </section>
       <section class="probabilities">
         <article class="probabilities--article averages">
           <h4 class="probabilities--header">
-            <i class="fa-solid fa-chart-line-up"></i>AVERAGES
+            <!-- Replaced pro icon with free equivalent -->
+            <i class="fa-solid fa-chart-line"></i>AVERAGES
           </h4>
           <p class="probabilities--paragraph xl">+2&#176;</p>
           <p class="probabilities--paragraph">above average daily high</p>
           <ul class="probabilities--ul">
             <li class="probabilities--li">Today</li>
             <li class="probabilities--li">H:25&#176;</li>
-          </ul> 
+          </ul>
           <ul class="probabilities--ul">
             <li class="probabilities--li">Average</li>
             <li class="probabilities--li">H:23&#176;</li>
-          </ul> 
+          </ul>
         </article>
         <article class="probabilities--article feels--like">
           <h4 class="probabilities--header">
-          <i class="fa-solid fa-temperature-list"></i>FEELS LIKE
+            <!-- Changed to a free temperature icon -->
+            <i class="fa-solid fa-temperature-high"></i>FEELS LIKE
           </h4>
           <p class="probabilities--paragraph xl">+2&#176;</p>
-          <p class="probabilities--paragraph">Similar to the actual temperature.</p>
+          <p class="probabilities--paragraph">
+            Similar to the actual temperature.
+          </p>
         </article>
       </section>
       <section class="wind">
         <h4 class="precipitation--header">
-          <i class="fa-solid fa-umbrella-simple"></i></i>10-DAY FORECAST
+          <!-- Replaced incorrect umbrella icon with a wind icon -->
+          <i class="fa-solid fa-wind"></i>10-DAY FORECAST
         </h4>
         <article class="wind--article">
           <ul class="wind--ul">
             <li class="wind--li">Wind <span class="wind--span">4km/h</span></li>
-            <li class="wind--li">Gusts <span class="wind--span">4km/h</span></li>
-            <li class="wind--li">Direction <span class="wind--span">4km/h</span></li>
+            <li class="wind--li">
+              Gusts <span class="wind--span">4km/h</span>
+            </li>
+            <li class="wind--li">
+              Direction <span class="wind--span">4km/h</span>
+            </li>
           </ul>
           <article class="wind--compass"></article>
         </article>
@@ -119,10 +131,11 @@
       <section class="statistic">
         <article class="statistic--article uv--index">
           <h4 class="statistic--header">
-            <i class="fa-solid fa-sun-bright"></i>UV INDEX
+            <!-- Replaced sun-bright with free sun icon -->
+            <i class="fa-solid fa-sun"></i>UV INDEX
           </h4>
           <p class="statistic--paragraph xl">0</p>
-          <P class="statistic--paragraph"> Low</P>
+          <p class="statistic--paragraph">Low</p>
           <p class="statistic--paragraph">Use sun protection 09:00-16:00</p>
         </article>
         <article class="statistic--article sunrise">
@@ -134,10 +147,10 @@
         </article>
         <article class="statistic--article precipitation">
           <h4 class="statistic--header">
-            <i class="fa-solid fa-droplet"></i>SUNRISE
+            <i class="fa-solid fa-droplet"></i>PRECIPITATION
           </h4>
           <p class="statistic--paragraph xl">4mm</p>
-          <P class="statistic--paragraph"> Today</P>
+          <p class="statistic--paragraph">Today</p>
           <p class="statistic--paragraph">Next expected in 9mm on Fri.</p>
         </article>
         <article class="statistic--article visibility">
@@ -151,13 +164,20 @@
 
       <section class="waxing">
         <h4 class="precipitation--header">
-          <i class="fa-solid fa-moon-over-sun"></i>WAXING CRESCENT
+          <!-- Replaced pro moon-over-sun with free moon icon -->
+          <i class="fa-solid fa-moon"></i>WAXING CRESCENT
         </h4>
         <article class="waxing--article">
           <ul class="waxing--ul">
-            <li class="waxing--li">Illumination <span class="waxing--span">1%</span></li>
-            <li class="waxing--li">Moonrise <span class="waxing--span">07:07</span></li>
-            <li class="waxing--li">Next Full Moon <span class="waxing--span">14 days</span></li>
+            <li class="waxing--li">
+              Illumination <span class="waxing--span">1%</span>
+            </li>
+            <li class="waxing--li">
+              Moonrise <span class="waxing--span">07:07</span>
+            </li>
+            <li class="waxing--li">
+              Next Full Moon <span class="waxing--span">14 days</span>
+            </li>
           </ul>
           <article class="waxing--compass"></article>
         </article>
@@ -166,30 +186,59 @@
       <section class="humidity--container">
         <article class="humidity--article humidity">
           <h4 class="humidity--header">
-            <i class="fa-solid fa-grate-droplet"></i>HUMIDITY
+            <!-- Replaced pro grate-droplet with free tint icon -->
+            <i class="fa-solid fa-tint"></i>HUMIDITY
           </h4>
           <p class="humidity--paragraph xl">80%</p>
-          <p class="humidity--paragraph">The dew point is 14&#176; right now.</p>
+          <p class="humidity--paragraph">
+            The dew point is 14&#176; right now.
+          </p>
         </article>
         <article class="humidity--article pressure">
           <h4 class="humidity--header">
-            <i class="fa-solid fa-tire-pressure-warning"></i>PRESSURE
+            <!-- Replaced tire-pressure-warning with a gauge icon -->
+            <i class="fa-solid fa-gauge-simple"></i>PRESSURE
           </h4>
           <p class="humidity--paragraph xl">05:59</p>
           <p class="humidity--paragraph">Sunset: 18:01</p>
         </article>
       </section>
-
-      <!-- Aside -->
-      <aside>
-        <h3>Sidebar</h3>
-        <p>This content is related but not essential to the main content.</p>
-      </aside>
+      <section class="report">
+        <article class="report--article">
+          <!-- Replaced pro message-exclamation with a free comment-dots icon -->
+          <i class="fa-solid fa-comment-dots"></i>
+          <article>
+            <h4>Report an Issue</h4>
+            <p>
+              You can describe the current condition at your location to help
+              improve forecasts.
+            </p>
+          </article>
+        </article>
+        <article class="report--weather--home">
+          <article class="report--content">
+            <h5 class="report--header--h5">Weather for Home</h5>
+            <p class="report--paragraph">Avenue Pelgan, Goma</p>
+          </article>
+          <i class="fa-solid fa-circle-exclamation"></i>
+        </article>
+        <article class="report--weather--home">
+          <h5 class="report--header--h5">Open in Maps</h5>
+          <!-- Replaced pro square-arrow-up-right with a free alternative -->
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </article>
+        <p>
+          Learn more about <a href="#">weather data</a> and
+          <a href="#">map data</a>
+        </p>
+      </section>
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="container">
       <p>&copy; 2025 Your Website. All rights reserved.</p>
+      <!-- Replaced pro square-list with free list icon -->
+      <i class="fa-solid fa-list"></i>
     </footer>
   </body>
 </html>

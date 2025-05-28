@@ -11,18 +11,33 @@
 
 html,
 body {
-  height: 100%;
+  /* height: 100%; */
   font-family: sans-serif;
   line-height: 1.5;
   background-color: #fff;
   color: #111;
+}
+body {
+  max-width: 350px;
+  margin: 0 auto;
+  /* background-image: url('../images/bg-img.jpg'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+li {
+  list-style-type: none;
+}
+a {
+  color: inherit;
+  cursor: pointer;
 }
 
 /* ===============================
    LAYOUT UTILITIES
 ================================= */
 .container {
-  max-width: 1200px;
+  max-width: 350px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -258,6 +273,12 @@ body {
 }
 .overflow-hidden {
   overflow: hidden;
+}
+.fa {
+  font-family: 'Font Awesome 6 Free';
+  color: red;
+  font-size: 2rem;
+  font-weight: 900; /* Adjust based on your icons */
 }
 
 /* ===============================
