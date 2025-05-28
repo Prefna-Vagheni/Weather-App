@@ -25,13 +25,13 @@
   <body>
     <!-- Header -->
     <header class="container">
-      <h1>Weather App</h1>
+      <!-- <h1>Weather App</h1> -->
       <nav>
-        <ul>
+        <ul class="flex flex-col abs-center p-4">
           <!-- Replaced pro duotone icon with free solid version -->
           <li><i class="fa-solid fa-paper-plane"></i>Home</li>
-          <li>Goma</li>
-          <li>17&#176;</li>
+          <li class="text-lg">Goma</li>
+          <li class="text-xxl">17&#176;</li>
           <li>Mostly clear</li>
           <li>H:23&#176; L:15&#176;</li>
         </ul>
@@ -41,15 +41,52 @@
     <!-- Main Content -->
     <main class="container">
       <!-- Section -->
-      <section class="forecast">
-        <p>
+      <section class="forecast--day w-full rounded p-1 opacity">
+        <p class="hourly--paragraph border-bottom">
           Rainy conditions expected around 00:00. Wind gusts are up to 10km/h
         </p>
-        <article>
-          <ul>
+        <h4 class="hourly--forecast hidden">HOURLY FORECAST</h4>
+        <article class="flex gap-2">
+          <ul class="hour--predict">
             <li>Now</li>
             <!-- Changed from fa-regular to fa-solid for free variant -->
-            <li><i class="fa-solid fa-cloud-bolt"></i></li>
+            <li><i class="fa-solid fa-cloud"></i></li>
+            <li>17&#176;</li>
+          </ul>
+          <ul class="hour--predict">
+            <li>Now</li>
+            <!-- Changed from fa-regular to fa-solid for free variant -->
+            <li><i class="fa-solid fa-cloud"></i></li>
+            <li>17&#176;</li>
+          </ul>
+          <ul class="hour--predict">
+            <li>Now</li>
+            <!-- Changed from fa-regular to fa-solid for free variant -->
+            <li><i class="fa-solid fa-cloud"></i></li>
+            <li>17&#176;</li>
+          </ul>
+          <ul class="hour--predict">
+            <li>Now</li>
+            <!-- Changed from fa-regular to fa-solid for free variant -->
+            <li><i class="fa-solid fa-cloud"></i></li>
+            <li>17&#176;</li>
+          </ul>
+          <ul class="hour--predict">
+            <li>Now</li>
+            <!-- Changed from fa-regular to fa-solid for free variant -->
+            <li><i class="fa-solid fa-cloud"></i></li>
+            <li>17&#176;</li>
+          </ul>
+          <ul class="hour--predict">
+            <li>Now</li>
+            <!-- Changed from fa-regular to fa-solid for free variant -->
+            <li><i class="fa-solid fa-cloud"></i></li>
+            <li>17&#176;</li>
+          </ul>
+          <ul class="hour--predict">
+            <li>Now</li>
+            <!-- Changed from fa-regular to fa-solid for free variant -->
+            <li><i class="fa-solid fa-cloud"></i></li>
             <li>17&#176;</li>
           </ul>
         </article>
@@ -235,10 +272,11 @@
     </main>
 
     <!-- Footer -->
-    <footer class="container">
-      <p>&copy; 2025 Your Website. All rights reserved.</p>
+    <footer class="container flex justify-between items-center">
+      <i class="fa-solid fa-arrow-up-wide-short text-lg"></i>
+      <p class="dot"></p>
       <!-- Replaced pro square-list with free list icon -->
-      <i class="fa-solid fa-list"></i>
+      <i class="fa-solid fa-list text-lg"></i>
     </footer>
   </body>
 </html>

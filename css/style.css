@@ -8,22 +8,39 @@
   margin: 0;
   padding: 0;
 }
-
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   /* height: 100%; */
   font-family: sans-serif;
   line-height: 1.5;
-  background-color: #fff;
-  color: #111;
+  background-color: #555;
+  color: whitesmoke;
 }
 body {
   max-width: 350px;
   margin: 0 auto;
-  /* background-image: url('../images/bg-img.jpg'); */
+  background-image: url('../images/bg-img.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: repeat-y;
+  position: relative;
+}
+main {
+  padding-bottom: 3rem;
+}
+header {
+  padding-bottom: 3rem;
+}
+footer {
+  height: 3rem;
+  background-color: rgba(96, 95, 95, 0.941);
+  border-top: 0.5px solid gray;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 li {
   list-style-type: none;
@@ -31,6 +48,10 @@ li {
 a {
   color: inherit;
   cursor: pointer;
+}
+i {
+  color: whitesmoke;
+  opacity: 0.8;
 }
 
 /* ===============================
@@ -41,9 +62,16 @@ a {
   margin: 0 auto;
   padding: 0 1rem;
 }
-
+.border-bottom {
+  border-bottom: 0.1px solid whitesmoke;
+  padding-bottom: 0.4rem;
+}
 .flex {
   display: flex;
+}
+.abs-center {
+  align-items: center;
+  justify-content: center;
 }
 .flex-row {
   flex-direction: row;
@@ -80,6 +108,12 @@ a {
 }
 .gap-4 {
   gap: 1rem;
+}
+.opacity-8 {
+  opacity: 0.8;
+}
+.opacity-5 {
+  opacity: 0.5;
 }
 
 /* ===============================
@@ -171,6 +205,10 @@ a {
 }
 .text-xl {
   font-size: 1.5rem;
+}
+
+.text-xxl {
+  font-size: 3rem;
 }
 
 .font-bold {
@@ -281,6 +319,11 @@ a {
   font-weight: 900; /* Adjust based on your icons */
 }
 
+.hour--predict {
+  display: flex;
+  flex-direction: column;
+}
+
 /* ===============================
    MEDIA QUERIES (RESPONSIVE)
 ================================= */
@@ -298,4 +341,15 @@ a {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.forecast--day {
+  border: 0.2px solid whitesmoke;
+  background-color: #a9c8ebc1;
 }
