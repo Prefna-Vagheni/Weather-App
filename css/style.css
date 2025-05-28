@@ -113,7 +113,7 @@ i {
   opacity: 0.8;
 }
 .opacity-5 {
-  opacity: 0.5;
+  opacity: 0.65;
 }
 
 /* ===============================
@@ -128,8 +128,8 @@ i {
 .grid-cols-3 {
   grid-template-columns: repeat(3, 1fr);
 }
-.grid-cols-4 {
-  grid-template-columns: repeat(4, 1fr);
+.grid-cols-5 {
+  grid-template-columns: repeat(5, 1fr);
 }
 .grid-gap-2 {
   gap: 0.5rem;
@@ -161,7 +161,7 @@ i {
   margin-left: 0.5rem;
 }
 .mr-2 {
-  margin-right: 0.5rem;
+  margin-right: 2rem;
 }
 
 /* Padding */
@@ -350,6 +350,25 @@ i {
 }
 
 .forecast--day {
-  border: 0.2px solid whitesmoke;
   background-color: #a9c8ebc1;
+}
+.box-shaddow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.forecast {
+  background-color: #a9c8ebc1;
+}
+.progress--bar {
+  width: 10rem;
+  height: 0.5rem;
+  border-radius: 0.4rem;
+  background-color: whitesmoke;
+}
+.forecast--article > :not(:last-child) {
+  border-bottom: 0.1px solid rgba(245, 245, 245, 0.253);
+}
+.precipitation--map {
+  height: 20rem;
+  border: 1px solid gray;
 }

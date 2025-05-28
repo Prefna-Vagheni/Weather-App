@@ -25,23 +25,20 @@
   <body>
     <!-- Header -->
     <header class="container">
-      <!-- <h1>Weather App</h1> -->
-      <nav>
-        <ul class="flex flex-col abs-center p-4">
-          <!-- Replaced pro duotone icon with free solid version -->
-          <li><i class="fa-solid fa-paper-plane"></i>Home</li>
-          <li class="text-lg">Goma</li>
-          <li class="text-xxl">17&#176;</li>
-          <li>Mostly clear</li>
-          <li>H:23&#176; L:15&#176;</li>
-        </ul>
-      </nav>
+      <ul class="flex flex-col abs-center p-4">
+        <!-- Replaced pro duotone icon with free solid version -->
+        <li><i class="fa-solid fa-paper-plane"></i>Home</li>
+        <li class="text-lg">Goma</li>
+        <li class="text-xxl">17&#176;</li>
+        <li>Mostly clear</li>
+        <li>H:23&#176; L:15&#176;</li>
+      </ul>
     </header>
 
     <!-- Main Content -->
     <main class="container">
       <!-- Section -->
-      <section class="forecast--day w-full rounded p-1 opacity">
+      <section class="forecast--day w-full rounded p-1 opacity box-shaddow">
         <p class="hourly--paragraph border-bottom">
           Rainy conditions expected around 00:00. Wind gusts are up to 10km/h
         </p>
@@ -93,32 +90,116 @@
       </section>
 
       <!-- Article -->
-      <section class="forecast">
-        <h4 class="forecast--header">
-          <!-- Removed duotone, using free solid icon -->
-          <i class="fa-solid fa-calendar-days"></i>10-DAY FORECAST
+      <section class="forecast rounded w-full mt-2 p-2 box-shaddow">
+        <h4
+          class="forecast--header flex gap-1 items-center border-bottom opacity-5"
+        >
+          <i class="fa-regular fa-calendar-days"></i>10-DAY FORECAST
         </h4>
+
         <article class="forecast--article">
-          <ul class="forecast--ul">
-            <li class="forecast--li">Today</li>
-            <li class="forecast--li"><i class="fa-solid fa-cloud-moon"></i></li>
+          <ul class="forecast--ul grid grid-cols-2 items-center grid-gap-4">
+            <li class="forecast--li flex justify-between items-center">
+              Today <i class="fa-solid fa-cloud-moon mr-2"></i>
+            </li>
+            <li class="forecast--li min flex justify-between items-center">
+              <span>17&#176;</span> <span class="progress--bar"></span>
+              <span>24&#176;</span>
+            </li>
           </ul>
-          <ul class="forecast--ul">
-            <li class="forecast--li min">17&#176;</li>
-            <li class="forecast--li progress--bar"></li>
-            <li class="forecast--li max">24&#176;</li>
+          <ul class="forecast--ul grid grid-cols-2 items-center grid-gap-4">
+            <li class="forecast--li flex justify-between items-center">
+              Today <i class="fa-solid fa-cloud-moon mr-2"></i>
+            </li>
+            <li class="forecast--li min flex justify-between items-center">
+              <span>17&#176;</span> <span class="progress--bar"></span>
+              <span>24&#176;</span>
+            </li>
+          </ul>
+          <ul class="forecast--ul grid grid-cols-2 items-center grid-gap-4">
+            <li class="forecast--li flex justify-between items-center">
+              Today <i class="fa-solid fa-cloud-moon mr-2"></i>
+            </li>
+            <li class="forecast--li min flex justify-between items-center">
+              <span>17&#176;</span> <span class="progress--bar"></span>
+              <span>24&#176;</span>
+            </li>
+          </ul>
+          <ul class="forecast--ul grid grid-cols-2 items-center grid-gap-4">
+            <li class="forecast--li flex justify-between items-center">
+              Today <i class="fa-solid fa-cloud-moon mr-2"></i>
+            </li>
+            <li class="forecast--li min flex justify-between items-center">
+              <span>17&#176;</span> <span class="progress--bar"></span>
+              <span>24&#176;</span>
+            </li>
+          </ul>
+          <ul class="forecast--ul grid grid-cols-2 items-center grid-gap-4">
+            <li class="forecast--li flex justify-between items-center">
+              Today <i class="fa-solid fa-cloud-moon mr-2"></i>
+            </li>
+            <li class="forecast--li min flex justify-between items-center">
+              <span>17&#176;</span> <span class="progress--bar"></span>
+              <span>24&#176;</span>
+            </li>
+          </ul>
+          <ul class="forecast--ul grid grid-cols-2 items-center grid-gap-4">
+            <li class="forecast--li flex justify-between items-center">
+              Today <i class="fa-solid fa-cloud-moon mr-2"></i>
+            </li>
+            <li class="forecast--li min flex justify-between items-center">
+              <span>17&#176;</span> <span class="progress--bar"></span>
+              <span>24&#176;</span>
+            </li>
+          </ul>
+          <ul class="forecast--ul grid grid-cols-2 items-center grid-gap-4">
+            <li class="forecast--li flex justify-between items-center">
+              Today <i class="fa-solid fa-cloud-moon mr-2"></i>
+            </li>
+            <li class="forecast--li min flex justify-between items-center">
+              <span>17&#176;</span> <span class="progress--bar"></span>
+              <span>24&#176;</span>
+            </li>
+          </ul>
+          <ul class="forecast--ul grid grid-cols-2 items-center grid-gap-4">
+            <li class="forecast--li flex justify-between items-center">
+              Today <i class="fa-solid fa-cloud-moon mr-2"></i>
+            </li>
+            <li class="forecast--li min flex justify-between items-center">
+              <span>17&#176;</span> <span class="progress--bar"></span>
+              <span>24&#176;</span>
+            </li>
+          </ul>
+          <ul class="forecast--ul grid grid-cols-2 items-center grid-gap-4">
+            <li class="forecast--li flex justify-between items-center">
+              Today <i class="fa-solid fa-cloud-moon mr-2"></i>
+            </li>
+            <li class="forecast--li min flex justify-between items-center">
+              <span>17&#176;</span> <span class="progress--bar"></span>
+              <span>24&#176;</span>
+            </li>
+          </ul>
+          <ul class="forecast--ul grid grid-cols-2 items-center grid-gap-4">
+            <li class="forecast--li flex justify-between items-center">
+              Today <i class="fa-solid fa-cloud-moon mr-2"></i>
+            </li>
+            <li class="forecast--li min flex justify-between items-center">
+              <span>17&#176;</span> <span class="progress--bar"></span>
+              <span>24&#176;</span>
+            </li>
           </ul>
         </article>
       </section>
 
-      <section class="precipitation">
-        <h4 class="precipitation--header">
-          <!-- Fixed duplicate closing tag and ensure free icon is used -->
-          <i class="fa-solid fa-umbrella-simple"></i>10-DAY FORECAST
+      <section class="precipitation mt-2 rounded w-full p-2 box-shaddow">
+        <h4
+          class="precipitation--header flex gap-1 items-center border-bottom opacity-5"
+        >
+          <i class="fa-solid fa-umbrella"></i>PRECIPITATION
         </h4>
-        <article class="precipitation--map"></article>
+        <article class="precipitation--map w-full"></article>
       </section>
-      <section class="probabilities">
+      <section class="probabilities mt-2 rounded w-full p-2 box-shaddow">
         <article class="probabilities--article averages">
           <h4 class="probabilities--header">
             <!-- Replaced pro icon with free equivalent -->
@@ -146,7 +227,7 @@
           </p>
         </article>
       </section>
-      <section class="wind">
+      <section class="wind mt-2 rounded w-full p-2 box-shaddow">
         <h4 class="precipitation--header">
           <!-- Replaced incorrect umbrella icon with a wind icon -->
           <i class="fa-solid fa-wind"></i>10-DAY FORECAST
@@ -165,7 +246,7 @@
         </article>
       </section>
 
-      <section class="statistic">
+      <section class="statistic mt-2 rounded w-full p-2 box-shaddow">
         <article class="statistic--article uv--index">
           <h4 class="statistic--header">
             <!-- Replaced sun-bright with free sun icon -->
@@ -199,7 +280,7 @@
         </article>
       </section>
 
-      <section class="waxing">
+      <section class="waxing mt-2 rounded w-full p-2 box-shaddow">
         <h4 class="precipitation--header">
           <!-- Replaced pro moon-over-sun with free moon icon -->
           <i class="fa-solid fa-moon"></i>WAXING CRESCENT
@@ -220,7 +301,7 @@
         </article>
       </section>
 
-      <section class="humidity--container">
+      <section class="humidity--container mt-2 rounded w-full p-2 box-shaddow">
         <article class="humidity--article humidity">
           <h4 class="humidity--header">
             <!-- Replaced pro grate-droplet with free tint icon -->
@@ -240,7 +321,7 @@
           <p class="humidity--paragraph">Sunset: 18:01</p>
         </article>
       </section>
-      <section class="report">
+      <section class="report mt-2 rounded w-full p-2 box-shaddow">
         <article class="report--article">
           <!-- Replaced pro message-exclamation with a free comment-dots icon -->
           <i class="fa-solid fa-comment-dots"></i>
