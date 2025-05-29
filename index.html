@@ -336,58 +336,6 @@
         </article>
       </section>
 
-      <section class="wind mt-2 rounded w-full p-2 box-shaddow">
-        <h4 class="precipitation--header flex gap-1 items-center opacity-5">
-          <!-- Replaced incorrect umbrella icon with a wind icon -->
-          <i class="fa-solid fa-wind"></i>WIND
-        </h4>
-        <article class="wind--article grid grid-cols-2">
-          <ul class="wind--ul">
-            <li class="wind--li flex justify-between">
-              Wind <span class="wind--span">4km/h</span>
-            </li>
-            <li class="wind--li flex justify-between">
-              Gusts <span class="wind--span">4km/h</span>
-            </li>
-            <li class="wind--li flex justify-between">
-              Direction <span class="wind--span">4km/h</span>
-            </li>
-          </ul>
-          <article class="wind--compass flex abs-center">
-            <svg width="50" height="50" viewBox="0 0 100 100">
-              <circle
-                cx="50"
-                cy="50"
-                r="45"
-                stroke="gray"
-                stroke-width="3"
-                fill="none"
-              />
-              <line
-                x1="50"
-                y1="5"
-                x2="50"
-                y2="95"
-                stroke="gray"
-                stroke-width="2"
-              />
-              <line
-                x1="5"
-                y1="50"
-                x2="95"
-                y2="50"
-                stroke="gray"
-                stroke-width="2"
-              />
-              <text x="50" y="12" text-anchor="middle">N</text>
-              <text x="50" y="90" text-anchor="middle">S</text>
-              <text x="90" y="50" text-anchor="middle">E</text>
-              <text x="10" y="50" text-anchor="middle">W</text>
-            </svg>
-          </article>
-        </article>
-      </section>
-
       <section class="waxing mt-2 rounded w-full p-2 box-shaddow">
         <h4 class="precipitation--header flex gap-1 items-center opacity-5">
           <i class="fa-solid fa-moon"></i>WAXING CRESCENT
@@ -417,24 +365,30 @@
         </article>
       </section>
 
-      <section class="humidity--container mt-2 rounded w-full p-2 box-shaddow">
-        <article class="humidity--article humidity">
-          <h4 class="humidity--header">
-            <!-- Replaced pro grate-droplet with free tint icon -->
+      <section class="humidity--container mt-2 grid grid-2 gap-4">
+        <article
+          class="humidity--article humidity w-full p-2 box-shaddow rounded"
+        >
+          <h4 class="humidity--header flex gap-1 items-center opacity-5">
             <i class="fa-solid fa-tint"></i>HUMIDITY
           </h4>
-          <p class="humidity--paragraph text-xl">80%</p>
-          <p class="humidity--paragraph">
-            The dew point is 14&#176; right now.
-          </p>
+          <article class="flex flex-col justify-between">
+            <p class="humidity--paragraph text-xl">80%</p>
+            <p class="humidity--paragraph">
+              The dew point is 14&#176; right now.
+            </p>
+          </article>
         </article>
-        <article class="humidity--article pressure">
-          <h4 class="humidity--header">
-            <!-- Replaced tire-pressure-warning with a gauge icon -->
+        <article
+          class="humidity--article pressure w-full p-2 box-shaddow rounded"
+        >
+          <h4 class="humidity--header flex gap-1 items-center opacity-5">
             <i class="fa-solid fa-gauge-simple"></i>PRESSURE
           </h4>
-          <p class="humidity--paragraph text-xl">05:59</p>
-          <p class="humidity--paragraph">Sunset: 18:01</p>
+          <article class="flex flex-col justify-between">
+            <p class="humidity--paragraph text-xl">05:59</p>
+            <p class="humidity--paragraph">Sunset: 18:01</p>
+          </article>
         </article>
       </section>
       <section class="report mt-2 rounded w-full p-2 box-shaddow">
