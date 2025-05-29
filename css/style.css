@@ -67,6 +67,7 @@ i {
   margin: 0 auto;
   padding: 0 1rem;
 }
+.report > :not(:last-child),
 .border-bottom {
   border-bottom: 0.1px solid whitesmoke;
   padding-bottom: 0.4rem;
@@ -380,20 +381,13 @@ i {
 .statistic--article {
   height: 10rem;
 }
-/* .wind--compass {
-  width: 100px;
-  height: 100px;
-  border: 3px solid black;
-  border-radius: 50%;
-  position: relative;
+.report--article {
+  grid-template-columns: 5rem 1fr;
+  place-items: center;
 }
-.needle {
-  width: 2px;
-  height: 80px;
-  background: red;
-  position: absolute;
-  top: 10px;
-  left: 49px;
-  transform-origin: bottom;
-  transform: rotate(0deg);
-} */
+.report--icon {
+  font-size: 3rem;
+}
+.report--weather--home {
+  margin-bottom: 4rem;
+}
