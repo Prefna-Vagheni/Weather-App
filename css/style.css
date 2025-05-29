@@ -132,6 +132,10 @@ i {
 .grid {
   display: grid;
 }
+.grid-center {
+  margin: auto;
+  place-items: center;
+}
 .grid-2 {
   grid-template-columns: repeat(2, 1fr);
 }

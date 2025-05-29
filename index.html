@@ -19,8 +19,19 @@
 
     <title>Weather App</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js" defer></script>
-    <!-- Link to utility CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script defer src="js/script.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -197,7 +208,7 @@
         >
           <i class="fa-solid fa-umbrella"></i>PRECIPITATION
         </h4>
-        <article class="precipitation--map w-full"></article>
+        <article class="precipitation--map w-full" id="map"></article>
       </section>
       <section class="probabilities mt-2 gap-1 w-full flex">
         <article
@@ -341,7 +352,7 @@
           <i class="fa-solid fa-moon"></i>WAXING CRESCENT
         </h4>
         <article class="waxing--article grid grid-cols-2">
-          <ul class="waxing--ul flex-col justify-between">
+          <ul class="waxing--ul flex flex-col justify-center">
             <li class="waxing--li flex justify-between">
               Illumination <span class="waxing--span">1%</span>
             </li>
