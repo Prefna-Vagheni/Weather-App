@@ -240,7 +240,9 @@
             <i class="fa-solid fa-temperature-high"></i>FEELS LIKE
           </h4>
           <article class="flex flex-col justify-between">
-            <p class="probabilities--paragraph text-xl">+2&#176;</p>
+            <p class="probabilities--paragraph text-xl">
+              <span class="feels--like--span"></span>&#176;
+            </p>
             <p class="probabilities--paragraph">
               Similar to the actual temperature.
             </p>
@@ -255,13 +257,13 @@
         <article class="wind--article grid grid-cols-2">
           <ul class="wind--ul">
             <li class="wind--li flex justify-between">
-              Wind <span class="wind--span">4km/h</span>
+              Wind <span class="wind--span"></span>km/h
             </li>
             <li class="wind--li flex justify-between">
-              Gusts <span class="wind--span">4km/h</span>
+              Gusts <span class="gusts--span"></span>km/h
             </li>
             <li class="wind--li flex justify-between">
-              Direction <span class="wind--span">4km/h</span>
+              Direction <span class="direction--span"></span>&#176; ENE
             </li>
           </ul>
           <article class="wind--compass flex abs-center">
@@ -387,7 +389,9 @@
             <i class="fa-solid fa-tint"></i>HUMIDITY
           </h4>
           <article class="flex flex-col justify-between">
-            <p class="humidity--paragraph text-xl">80%</p>
+            <p class="humidity--paragraph text-xl">
+              <span class="humidity--percent"></span>%
+            </p>
             <p class="humidity--paragraph">
               The dew point is 14&#176; right now.
             </p>

@@ -14,14 +14,31 @@ const getWeather = function (country) {
     .then(function (data) {
       console.log(data.main.temp);
       const temperature = data;
-      document.querySelector('.highest--temperature').textContent =
-        data.main.tem_max;
-      document.querySelector('.lowest--temperature').textContent =
-        data.main.tem_min;
+      document.querySelector('.feels--like--span').textContent = Math.trunc(
+        data.main.feels_like
+      );
+      document.querySelector('.highest--temperature').textContent = Math.trunc(
+        data.main.tem_max
+      );
+      document.querySelector('.lowest--temperature').textContent = Math.trunc(
+        data.main.tem_min
+      );
+      document.querySelector('.humidity--percent').textContent = Math.trunc(
+        data.main.humidity
+      );
       document.querySelector('.temp').textContent = Math.trunc(data.main.temp);
       document.querySelector('.city').textContent = data.name;
       document.querySelector('.weather').textContent =
         data.weather[0].description;
+      document.querySelector('.wind--span').textContent = Math.trunc(
+        data.wind.speed
+      );
+      //   document.querySelector('.gusts--span').textContent = Math.trunc(
+      // data.wind.gusts
+      //   );
+      document.querySelector('.directtion--span').textContent = Math.trunc(
+        data.wind.deg
+      );
       console.log(temperature);
     })
     .catch((err) => console.error('Error💣: ', err.message));
